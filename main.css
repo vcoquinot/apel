@@ -1,11 +1,23 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 p{
   font-size:20px;
 }
 
+li{
+  list-style: none;
+  }   
+
+.glyphicon{
+  color: #9abf0f;
+  font-size:25px;
+}
+
+.glyphicon .glyphicon-chevron-down{
+  color:#5cc2d1;
+}
 
 a{
   color:#5cc2d1;
@@ -21,10 +33,12 @@ a:hover{
 .navbar {
   border: none;
 }
+
 .navbar-brand {
     padding: 15px 15px;
     font-size: 33px;
 }
+
 .navbar-default {
     background-color: #5cc2d1; /*#9abf0f;*/
     margin: 0;
@@ -69,51 +83,80 @@ a:hover{
   border-color: #ff7477;
 }
 
-/* ACCUEIL
+/* ----------------------------------------------------
+                    ACCUEIL
 ----------------------------------------------------*/
 
-.accueil 
-{
+#accueil {
   max-width: 100%;
-  border:solid 2px #9abf0f;
-  margin-top: 30px;
-}
-
-#accueil .glyphicon
-{
-  color: #9abf0f;
-  font-size:25px;
+  margin-top: 60px;
 }
 
 
-/* BLOCKS
-----------------------------------------------------*/
+/* ----------presentation----------*/
+#presentation{
+  padding-top:60px;
+}
 
-.action-block, .financement-block, .membres-block
-{
+#presentation li{
+   font-size: 20px !important;
+}
+
+#presentation h3{
+  padding-top:20px;
+  padding-bottom:45px;
+}
+
+#presentation p{
+  padding-top:20px;
+  padding-bottom:15px;
+}
+
+/*----------3 blocks----------*/
+.action-block, .financement-block, .membres-block{
   width:80%;
   margin: 0 auto;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top:5px;
   border-radius: 10px;
   border: 1px solid #9abf0f;
   background: #fff;
   margin-bottom: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
-
-.action-block .glyphicon, .financement-block .glyphicon, .membres-block .glyphicon
-{
+.action-block .glyphicon, .financement-block .glyphicon, .membres-block .glyphicon{
   font-size: 25px;
   color:#9abf0f /*#5cc2d1;*/
-  padding-top : 25px;
-  margin-top: 25px;
+  padding-top : 5px;
+  margin-top: 5px;
+}
+
+.action-block h2, .financement-block h2, .membres-block h2{
+  margin-top:5px;
+}
+
+/*----------carousel----------*/
+#slides{
+  padding-top:60px ;
+  padding-bottom:60px;
+}
+
+  #carousel {
+  max-width: 50%;
+  margin:auto;
+}
+
+.carousel-control .glyphicon{
+  color: white;
 }
 
 
-/* PAGE A PROPOS
+/* ----------------------------------------------------
+              PAGE A PROPOS
 ----------------------------------------------------*/
+
 #apelsfa{
   margin-top : 75px;
 }
@@ -121,7 +164,7 @@ a:hover{
 h2{
   margin-top: 40px;
   margin-bottom:25px; 
-  color: #9abf0f;;
+  color: #9abf0f;
 }
 
 img{
@@ -129,247 +172,150 @@ img{
   border:solid 1px #9abf0f;
 }
 
-#conseil_administration{
-  margin-top: 25px; 
-}
-#about { 
-  background: url("images/accueil_background.jpg");
-  background-attachment: fixed, scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%;
-  text-align: center;
-  color: #265c5a; 
-  padding-left:100px;
-}
-
-#accueil h1{
-  margin-top: -75px;
-}
-
-#accueil h2{
-  padding-top: 10px;
-}
-
-#titre {
-  text-align: center;
-
-}
-
-#titre h1 {
-  font-size: 29px;
-  display:inline-block;
-    -webkit-transform:scale(1.9,1.7); /* Safari and Chrome */
-    -moz-transform:scale(1.9,1.7); /* Firefox */
-    -ms-transform:scale(1.9,1.7); /* IE 9 */
-    -o-transform:scale(1.9,1.7); /* Opera */
-    transform:scale(1.9,1.7); /* W3C */
-  line-height: 1.7;
-  margin-bottom: 0px;
-}
-
- #mooc h2{
+#financement{
   padding-top: 25px;
-  font-size: 18px;
- }
 
- #mooc p {
-  font-size: 20px;
-  margin-bottom: 35px;
+}
+
+#financement p{
+  margin-bottom: 50px;
+}
+
+#financement img{
+  border: none;
+}
+
+#financement .glyphicon-chevron-down{
   margin-top: 25px;
-  color:black;
 }
 
-/* PARCOURS
-----------------------------------------------------*/
-#parcours {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom:50px;
+#conseil_administration{
+  margin-top: 25px;
 }
 
- #parcours h2{
+#galerie{
   padding-top: 50px;
- }
-
- #parcours img{
-  padding-top: 50px;
- }
-
- #parcours #question {
-  padding-top: 5px;
- }
-
- #parcours #bref {
-  padding-top: 5px;
- }
-
- #bref img{
-  padding-top:5px;
- }
-
-
- #parcours li{
-  font-size: 20px;
-  text-align: justify-center;
-  margin-top: 10px;
- }
-
- #parcours h2{
-  margin-bottom: 20px;
- }
-
- #cv {
-  margin-top:40px;
-  }
-
-#parcours .btn-default {
-    background-color: #ffcc58;
-    color: #333;
-    border-color: #ffcc58;
 }
 
-/* COMPETENCES & PORTFOLIO
+#galerie img{
+  max-width:100%;
+  border:solid 2px #9abf0f;
+  border-radius: 20px;
+}
+
+.gallery img{
+  margin-top: 10%
+}
+
+#galerie .fa {
+  color:#5cc2d1;
+}
+
+
+/* PAGE AGENDA
 ----------------------------------------------------*/
-#projets { 
-  background: url("projets_background.jpg") ;
-  background-attachment: fixed, scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%;
-  }
-
-#compétences {
-  margin-top: 80px;
+#agenda {
+  margin-top: 50px;
 }
 
-#portfolio {
-  text-align: center;
+#agenda p{
+    font-size: 20px;
 }
 
-#portfolio h1{
-  padding-top: 20px;
+#agenda li{
+    font-size: 20px;
 }
 
-#portfolio img {
-    margin-top:25px;
-    border-radius:2%;
-    border:#eee solid 4px;
-    color:#265c5a;
- }
+#events h2{
+  padding-top: 50px;
+}
 
- #portfolio {
-  font-size:18px;
- }
+#entete{
+    background-color: #5cc2d1;
+    font-weight:bold;
+}
+
+#entete, #manifestation{
+    border: solid 1px #5cc2d1;
+}
+
+#agenda em{
+    font-size: 15px;
+}
+
+#date h1{
+    margin-top: 15px;
+}
+
+#date{
+    margin-top:5px;
+    margin-bottom:25px;
+}
 
 /* CONTACT
 --------------------------------------------------*/
 #contact {
-  text-align: center;
-  min-height: 100vh;
-  padding: 21vh 0%;
-  width: 100%;
+  margin-top: 50px;
+  margin-bottom:70px;
 }
 
-#contact .btn-default {
-    background-color: #eee;
-    color: #333;
-    border-color: #4cb8b4;
+#contact h2{
+  color:#9abf0f;
 }
-#contact p, #contact ul li {
+
+#contact p{
   font-size: 15px;
 }
 
-#contact{
-  background: url("contact_background.jpg");
-  background-attachment: fixed, scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#mail img{
+  margin-top: 15px;
+  border: none;
+  max-width: 60% 
+}
+
+
+#actualite h2{
+  color:#9abf0f;
+}
+#actualite iframe{
+  margin-top:20px;
+  border:solid 1px #9abf0f;
+  border-radius: 5px;
+}
+
+
+/* FOOTER 
+-------------------------------------------------*/
+footer{
+  background: #5cc2d1;
+  padding: 10px 0 10px;
+  margin-top: 25px;
+}
+
+footer p,footer a{
+  font-size:18px !important;
 
 }
+footer a{
+  color:black;
+}
+
+footer a:hover{
+  color:white;
+}
+
 
 /* MEDIA QUERIES
 --------------------------------------------------*/
-@media (min-width: 320px) {
 
-  #accueil{
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+/*footer*/
+  footer {
+  font-size:9px;
+
+
+
+
   }
-
-  #titre h1 {
-    padding-top:100px;
-    padding-bottom: 5px;
-    font-size:22px;
-  }
-
-  #accueil h2{
-    font-size:20px
-  }
- 
-  #projets h2{
-    font-size:20px;
-  }
-
-  #portfolio h2{
-    padding-top: 20px;
-    margin-bottom:10px;
-  }
-
-}
-
-
-@media (min-width: 768px) {
-   #nav {
-    padding: 0px 55px;
-  }
-
-  .navbar-default {
-      padding: 5px;
-  }
-
-  .navbar-nav {
-      float: right;
-  }
-  
-
-  #titre {
-      padding: 16vh 21vh 0vh 10vh;
-  }
-
-  #titre h1 {
-    padding-top:20px;
-    padding-bottom: 5px;
-    font-size:22px;
-  }
-
-  #projets{
-    font-size:16px;
-  }
-
-
-
-/*@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }*/
-}
 /* HOVER
 --------------------------------------------------*/
 .hvr-bounce-to-right {
